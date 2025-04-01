@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1D503A', // Dark green
+                        secondary: '#FAF5EE' // Light background
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; background-color: #FAF5EE; } /* Light background */
+        .section-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .section-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-['Pacifico'] text-primary">Portfolio</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-primary transition-colors">About</a>
+                    <a href="#education" class="text-gray-600 hover:text-primary transition-colors">Education</a>
+                    <a href="#experience" class="text-gray-600 hover:text-primary transition-colors">Experience</a>
+                    <a href="#sports" class="text-gray-600 hover:text-primary transition-colors">Sports</a>
+                    <a href="#projects" class="text-gray-600 hover:text-primary transition-colors">Projects</a>
+                    <a href="#Achievements" class="text-gray-600 hover:text-primary transition-colors">Achievements</a>
+                    <a href="#why-hire-me" class="text-gray-600 hover:text-primary transition-colors">Why Hire Me</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+                    <a href="https://drive.google.com/file/d/10Ji3lNDO0JXQvjLZgc6tCTE9hBHZiES6/view?usp=sharing" target="_blank" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors">Download CV</a>
+                </div>
+                <button class="md:hidden w-10 h-10 flex items-center justify-center">
+                    <i class="ri-menu-line text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <header class="pt-32 pb-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1">
+                    <h1 class="text-5xl md:text-6xl font-bold text-primary mb-6">Aswin D</h1>
+                    <p class="text-xl text-gray-600 mb-8">Computer Science Student specializing in Cybersecurity with hands-on experience gained through online job simulations.</p>
+                    <div class="flex gap-4">
+                        <a href="#why-hire-me" class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Why Hire Me</a>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <img src="D:\Portfolio\Aswin_Img1.jpg" class="w-full rounded-2xl shadow-xl" alt="Profile Photo of Aswin D">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="about" class="py-20 bg-gray-50/50">
+        <div class="container mx-auto max-w-6xl px-6">
+            <div class="section-fade">
+                <h2 class="text-3xl font-bold text-primary mb-16 text-center">About Me</h2>
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="flex-1">
+                        <img src="D:\Portfolio\Aswin_Img2.jpg" class="w-full rounded-2xl shadow-lg" alt="Working Photo of Aswin D">
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-gray-600 mb-8">I am an aspiring Cybersecurity Student with practical experience in network security, vulnerability assessment, and penetration testing. Through comprehensive job simulations with ANZ Australia, Mastercard, and Tata Group, I have developed proficiency in utilizing industry-standard tools and frameworks, including Kali Linux, Wireshark, and Nmap.</p>
+                        <p class="text-gray-600 mb-8">My expertise encompasses identifying and mitigating security vulnerabilities, conducting network traffic analysis, and implementing effective security training procedures. I am deeply committed to continuous learning and staying abreast of emerging cybersecurity threats to ensure the resilience and security of digital infrastructures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="py-20">
+        <div class="container mx-auto max-w-6xl px-6">
+            <div class="section-fade">
+                <h2 class="text-3xl font-bold text-primary mb-16 text-center">Education</h2>
+                <div class="space-y-12">
+                    <div class="flex gap-8">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/5 rounded-xl shrink-0">
+                            <i class="ri-graduation-cap-line text-2xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Bachelor of Technology, Computer Science & Engineering (Cybersecurity)</h3>
+                            <p class="text-gray-600 mb-2">Garden City University, Bangalore | 2022 - 2026</p>
+                            <p class="text-gray-600">Specialized in Cybersecurity with a focus on network security, vulnerability assessment, and secure system design.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/5 rounded-xl shrink-0">
+                            <i class="ri-graduation-cap-line text-2xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Senior Higher Secondary Education</h3>
+                            <p class="text-gray-600 mb-2">SVMMVHSS Vendar | 2020 - 2022</p>
+                            <p class="text-gray-600">Studied Mathematics, English, Computer Science, Physics, and Chemistry, securing 86%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="py-20 bg-gray-50/50">
+        <div class="container mx-auto max-w-6xl px-6">
+            <div class="section-fade">
+                <h2 class="text-3xl font-bold text-primary mb-16 text-center">Experience</h2>
+                <div class="space-y-12">
+                    <div class="flex gap-8">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/5 rounded-xl shrink-0">
+                            <i class="ri-briefcase-line text-2xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">ANZ Australia Cyber Security Management</h3>
+                            <p class="text-gray-600 mb-2">Job Simulation on Forage | March 2025</p>
+                            <p class="text-gray-600">Completed a cybersecurity threat identification simulation at ANZ, involving email investigation, analysis of packet capture files using open-source tools, and reporting suspicious findings.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/5 rounded-xl shrink-0">
+                            <i class="ri-briefcase-line text-2xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Tata Cybersecurity Security Analyst</h3>
+                            <p class="text-gray-600 mb-2">Job Simulation on Forage | March 2025</p>
+                            <p class="text-gray-600">Identity and Access Management (IAM) at Tata Consultancy Services, collaborating with the Cybersecurity Consulting team to apply IAM principles, cybersecurity best practices, and align strategies with business objectives, while effectively communicating complex technical concepts.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/5 rounded-xl shrink-0">
+                            <i class="ri-briefcase-line text-2xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Omni Sports Leader</h3>
+                            <p class="text-gray-600 mb-2">Decathlon Bangalore | April 2024 - June 2024</p>
+                            <p class="text-gray-600">Gained experience in customer engagement, inventory management, and sales operations, while enhancing teamwork and communication skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sports" class="py-20">
+        <div class="container mx-auto max-w-6xl px-6">
+            <div class="section-fade">
+                <h2 class="text-3xl font-bold text-primary mb-16 text-center">Sports Achievements</h2>
+                <div class="space-y-12">
+                    <div class="flex gap-8">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/5 rounded-xl shrink-0">
+                            <i class="ri-basketball-line text-2xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Sports Excellence</h3>
+                            <p class="text-gray-600 mb-2">Football Team Captain | 2024 - Present</p>
+                            <p class="text-gray-600">Represented the university in two South Zone Inter-University Tournaments and led the team in multiple tournaments, demonstrating leadership, teamwork, and competitive spirit.</p>
+                            <div class="mt-8">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <h4 class="text-lg font-medium">Sports Gallery</h4>
+                                    <label for="imageUpload" class="cursor-pointer px-4 py-2 bg-primary text-white !rounded-button hover:bg-primary/90 transition-colors">
+                                        <i class="ri-add-line mr-2"></i>Add Photos
+                                    </label>
+                                    <input type="file" id="imageUpload" class="hidden" accept="image/*" multiple onchange="handleImageUpload(event)">
+                                </div>
+                                <div id="imageGallery" class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                                    <img src="D:\Portfolio\South zone University.jpg" class="w-full h-60 object-cover rounded-xl" alt="Sports Photo 1">
+                                    <img src="D:\Portfolio\PXL_20240611_113208531~2.jpg" class="w-full h-60 object-cover rounded-xl" alt="Sports Photo 2">
+                                    <img src="D:\Portfolio\Futsal and Fashion.jpg" class="w-full h-60 object-cover rounded-xl" alt="Sports Photo 3">
+                                    <img src="D:\Portfolio\Aswin_gk.jpg" class="w-full h-60 object-cover rounded-xl" alt="Sports Photo 1">
+                                    <img src="D:\Portfolio\University futsal.jpg" class="w-full h-60 object-cover rounded-xl" alt="Sports Photo 1">
+                                    <img src="D:\Portfolio\Decathalon tournment team.jpg" class="w-full h-60 object-cover rounded-xl" alt="Sports Photo 1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="py-20 bg-gray-50/50">
+        <div class="container mx-auto max-w-6xl px-6">
+            <div class="section-fade">
+                <h2 class="text-3xl font-bold text-primary mb-16 text-center">Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <img src="D:\Portfolio\FFR.jpg" class="w-full h-48 object-cover" alt="Fire Fighting Robot Project">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Fire Fighting Robot</h3>
+                            <p class="text-gray-600 mb-4">A firefighting robot using Arduino Uno. The robot detects and extinguishes fires autonomously.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-primary/5 text-primary text-sm rounded-full">C++</span>
+                                <span class="px-3 py-1 bg-primary/5 text-primary text-sm rounded-full">Arduino</span>
+                                <span class="px-3 py-1 bg-primary/5 text-primary text-sm rounded-full">Sensors</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Achievements" class="py-20 bg-gray-50/50">
+        <div class="container mx-auto max-w-6xl px-6">
+            <div class="section-fade">
+                <h2 class="text-3xl font-bold text-primary mb-16 text-center">Academic Achievements</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <img src="D:\Portfolio\Paper GCU.jpg" alt="Enterprise Dashboard Project">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Defending Cyberspace: Against AI-Based Cyber Attacks</h3>
+                            <p class="text-gray-600 mb-4">Achieved second place at the International Conference on "Recent Trends in Computing System & Robotics," hosted by Garden City University.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-primary/5 text-primary text-sm rounded-full">AI-Powered Threat Detection</span>
+                                <span class="px-3 py-1 bg-primary/5 text-primary text-sm rounded-full">Anomaly Detection Systems</span>
+                                <span class="px-3 py-1 bg-primary/5 text-primary text-sm rounded-full">GraphQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <img src="D:\Portfolio\Engg Skill.jpg" class="w-full h-48 object-cover" alt="Enterprise Dashboard Project">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Filter Design using NI Multisim</h3>
+                            <p class="text-gray-600 mb-4">Participated in the "Engineering Skill Show" at Garden City University and secured 2nd place for showcasing innovations in electrical engineering labs.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-primary/5 text-primary text-sm rounded-full">NI Multisim</span>
+                                <span class="px-3 py-1 bg-primary/5 text-primary text-sm rounded-full">Virtual Electronic Components</span>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="why-hire-me" class="py-20 bg-gray-50/50">
+        <div class="container mx-auto max-w-6xl px-6">
+            <div class="section-fade">
+                <h2 class="text-3xl font-bold text-primary mb-16 text-center">Why Hire Me?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/5 rounded-xl mb-6">
+                            <i class="ri-code-box-line text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Technical Excellence</h3>
+                        <p class="text-gray-600">With a strong foundation in Cybersecurity, I offer innovative solutions to modern security challenges. My hands-on experience with tools like Kali Linux, Wireshark, Nmap, etc. reflects my ability to tackle complex technical problems effectively.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/5 rounded-xl mb-6">
+                            <i class="ri-team-line text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Leadership & Collaboration</h3>
+                        <p class="text-gray-600">From leading innovative projects in network traffic analysis to collaborating on fraud detection dashboards, I thrive in team environments. My teamwork in sports (football and futsal tournaments) and project-based leadership have sharpened my ability to foster collaboration and deliver results.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/5 rounded-xl mb-6">
+                            <i class="ri-lightbulb-line text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Innovation Driver</h3>
+                        <p class="text-gray-600">I’m passionate about pushing boundaries — whether it's developing a fire prevention robot during my first semester or implementing a sensor network to improve remote monitoring. My research on AI-based cyber-attacks earned recognition at an international conference, demonstrating my drive for innovative solutions.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/5 rounded-xl mb-6">
+                            <i class="ri-customer-service-2-line text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Solution-Oriented Mindset</h3>
+                        <p class="text-gray-600">I thrive on solving complex challenges with innovative and practical solutions. From developing IoT systems for remote monitoring to building cybersecurity dashboards for fraud detection, I approach every project with a focus on efficiency, reliability, and measurable results.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/5 rounded-xl mb-6">
+                            <i class="ri-global-line text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Global Perspective</h3>
+                        <p class="text-gray-600">Having participated in job simulations with organizations like ANZ Australia, Mastercard, and Tata Group, I bring diverse perspectives to problem-solving. I’m adaptable to cross-functional and multicultural environments.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/5 rounded-xl mb-6">
+                            <i class="ri-rocket-line text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Growth Mindset</h3>
+                        <p class="text-gray-600">Continuous learning is at the core of my journey. From earning Linux and Webflow 101 certifications to consistently exploring new technologies in cybersecurity and IoT, I’m committed to staying ahead of industry trends.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-20">
+        <div class="container mx-auto max-w-6xl px-6">
+            <div class="section-fade">
+                <h2 class="text-3xl font-bold text-primary mb-16 text-center">Get In Touch</h2>
+                <div class="flex flex-col items-center">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mb-12">
+                        <div class="flex items-center gap-4 bg-white p-6 rounded-xl shadow-sm">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-xl">
+                                <i class="ri-mail-line text-xl text-primary"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600">Email</p>
+                                <p class="font-medium">jeyasreeaswin83@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white p-6 rounded-xl shadow-sm">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-xl">
+                                <i class="ri-phone-line text-xl text-primary"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600">Phone</p>
+                                <p class="font-medium">+91 8921050822</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white p-6 rounded-xl shadow-sm">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-xl">
+                                <i class="ri-map-pin-line text-xl text-primary"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600">Location</p>
+                                <p class="font-medium">Bangalore, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-4">Follow Me</h3>
+                        <div class="flex justify-center gap-4">
+                            <a href="https://github.com/Aswindil12" target="_blank" class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-xl hover:bg-primary/10 transition-colors">
+                                <i class="ri-github-line text-xl text-primary"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/aswin-j-dileep" target="_blank" class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-xl hover:bg-primary/10 transition-colors">
+                                <i class="ri-linkedin-line text-xl text-primary"></i>
+                            </a>
+                            <a href="https://www.instagram.com/aswin_dileep_01" target="_blank" class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-xl hover:bg-primary/10 transition-colors">
+                                <i class="ri-instagram-line text-xl text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto max-w-6xl px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <a href="#" class="text-2xl font-['Pacifico']">Portfolio</a>
+                <div class="flex gap-8">
+                    <a href="#about" class="hover:text-white/80 transition-colors">About</a>
+                    <a href="#education" class="hover:text-white/80 transition-colors">Education</a>
+                    <a href="#experience" class="hover:text-white/80 transition-colors">Experience</a>
+                    <a href="#sports" class="hover:text-white/80 transition-colors">Sports</a>
+                    <a href="#projects" class="hover:text-white/80 transition-colors">Projects</a>
+                    <a href="#Achievements" class="hover:text-white/80 transition-colors">Achievements</a>
+                    <a href="#why-hire-me" class="hover:text-white/80 transition-colors">Why Hire Me</a>
+                    <a href="#contact" class="hover:text-white/80 transition-colors">Contact</a>
+                </div>
+                <div class="flex gap-4">
+                    <a href="https://github.com/yourprofile" target="_blank" class="w-10 h-10 flex items-center justify-center hover:bg-white/10 rounded-full transition-colors">
+                        <i class="ri-github-line"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="w-10 h-10 flex items-center justify-center hover:bg-white/10 rounded-full transition-colors">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                    <a href="https://instagram.com/yourprofile" target="_blank" class="w-10 h-10 flex items-center justify-center hover:bg-white/10 rounded-full transition-colors">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-white/10 text-center text-sm text-white/60">
+                © 2025 Michael Anderson. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 cursor-pointer">
+        <i class="ri-arrow-up-line text-xl"></i>
+    </button>
+    <script>
+        function handleImageUpload(event) {
+            const gallery = document.getElementById('imageGallery');
+            const files = event.target.files;
+            for (let file of files) {
+                if (file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        const img = document.createElement('img');
+                        img.src = e.target.result;
+                        img.className = 'w-full h-48 object-cover rounded-xl';
+                        img.alt = 'Uploaded Sports Photo';
+                        gallery.appendChild(img);
+                    }
+                    reader.readAsDataURL(file);
+                }
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.section-fade');
+            const backToTop = document.getElementById('backToTop');
+            const observerOptions = {
+                threshold: 0.1
+            };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 500) {
+                    backToTop.classList.remove('opacity-0', 'invisible');
+                } else {
+                    backToTop.classList.add('opacity-0', 'invisible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
